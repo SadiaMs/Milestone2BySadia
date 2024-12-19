@@ -4,9 +4,9 @@ const projects = [
   {
     title: "Dynamic Resume Builder",
     description:
-      "A web application for building Dynamic resumes using TypeScript .",
+      "A web UI design using Figma .",
     link: "/projects/resume-builder",
-    technologies: ["React", "TypeScript", "CSS"],
+    technologies: ["Figma"],
     image: "/my figma.png", // Add 
   },
   {
@@ -79,25 +79,25 @@ const projects = [
 
 const Project = () => {
   return (
-    <section id="projects" className="py-12 bg-gray-100">
+    <section id="projects" className="py-12 bg-green-100">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-green-800 mb-6">
+        <h2 className="text-3xl font-bold text-center text-green-800 mb-6 hover:underline">
           Projects
         </h2>
         <p className="text-center text-gray-600 mb-8">
           Here are some of the exciting projects I've worked on:
         </p>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+              className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lime-500 transition-shadow duration-300 "
             >
               {/* Image Section */}
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-40 object-cover"
+                className="w-full h-45 object-cover"
               />
               {/* Project Details */}
               <div className="p-6">
