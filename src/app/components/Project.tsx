@@ -88,7 +88,7 @@ const Project = () => {
           Projects
         </h2>
         <p className="text-center text-gray-600 mb-8">
-          Here are some of the exciting projects I've worked on:
+          Here are some of the exciting projects I have worked on:
         </p>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
           {projects.map((project, index) => (
@@ -134,3 +134,4 @@ const Project = () => {
 };
 
 export default Project;
+;
