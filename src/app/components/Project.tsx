@@ -1,13 +1,15 @@
+import Image from "next/image";
 import React from "react";
+
 
 const projects = [
   {
-    title: "Dynamic Resume Builder",
+    title: "Figma templete",
     description:
       "A web UI design using Figma .",
     link: "/projects/resume-builder",
     technologies: ["Figma"],
-    image: "/my figma.png", // Add 
+    Image: "/my figma.png", // Add 
   },
   {
     title: "Dynamic Resume Builder",
@@ -15,7 +17,7 @@ const projects = [
       "A web application for building Dynamic resumes using TypeScript .",
     link: "/projects/resume-builder",
     technologies: ["React", "TypeScript", "CSS"],
-    image: "/18.png", // image
+  Image: "/18.png", // image
   },
   {
     title: "Editable Resume Builder",
@@ -23,7 +25,7 @@ const projects = [
       "A modern, interactive restaurant website built with HTML, CSS, and JavaScript.",
     link: "https://milestone4-tau.vercel.app/",
     technologies: ["HTML", "CSS", "JavaScript"],
-    image: "/15.png", // Example image path
+    Image: "/15.png", // image 
   },
   {
     title: "Shareable Resume Builder",
@@ -31,7 +33,7 @@ const projects = [
       "A web application for building shareable and editable resumes using TypeScript and jsPDF.",
     link : "https://milestone4-tau.vercel.app/",
     technologies: ["Next.js", "OpenAI API", "Tailwind CSS"],
-    image: "/16.png", // image path
+    Image: "/16.png", // image path
   },
   {
     title: "Canva Templete",
@@ -39,15 +41,15 @@ const projects = [
       "I create an UI templete in Canva.",
     link: "/",
     technologies: ["Canva"],
-    image: "/MOATAR WEBSITE.png", // image path
+    Image: "/MOATAR WEBSITE.png", // image path
   },
   {
     title: "Contact US Form",
     description:
-      "An AI-powered tool for generating stunning images, integrated with APIs for creativity.",
+      "I create a contact us form using html,css,typescript.",
     link: "/12.png",
     technologies: ["Next.js", "OpenAI API", "Tailwind CSS"],
-    image: "/Screenshot 2024-12-19 163102.png", // image path
+    Image: "/Screenshot 2024-12-19 163102.png", // image path
   },
   {
     title: "Figma To Nextjs",
@@ -55,15 +57,15 @@ const projects = [
       "An AI-powered tool for generating stunning images, integrated with APIs for creativity.",
     link: "https://haci3figma.vercel.app/",
     technologies: ["Next.js", "Figma", "Tailwind CSS"],
-    image: "/14.png", //  image
+    Image: "/14.png", //  image
   },
   {
-    title: "Travelling Website UI",
+    title: "Travelling Parallex website UI",
     description:
-      "An AI-powered tool for generating stunning images, integrated with APIs for creativity.",
+      "I create a travelling parallex website for creativity.",
     link: "/12.png",
     technologies: ["HTML", "CSS", "Typescript"],
-    image: "/12.png", // image path
+    Image: "/12.png", // image path
   },
   {
     title: "The Carribbean Life Website UI",
@@ -71,7 +73,8 @@ const projects = [
       "A parallex website UI design.",
     link: "/12.png",
     technologies: ["HTML", "CSS", "Typescript"],
-    image: "/17.png", //image path
+    Image: "/17.png", //image path
+    
   },
  
 
@@ -94,8 +97,8 @@ const Project = () => {
               className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lime-500 transition-shadow duration-300 "
             >
               {/* Image Section */}
-              <img
-                src={project.image}
+              <Image width={400} height={400}
+                src={project.Image}
                 alt={project.title}
                 className="w-full h-45 object-cover"
               />
@@ -121,7 +124,7 @@ const Project = () => {
                 >
                   View Project &rarr;
                 </a>
-              </div>
+              </div> image
             </div>
           ))}
         </div>
