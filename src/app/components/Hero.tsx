@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -8,7 +9,7 @@ const Hero = () => {
         {/* Icon Section */}
         <div className="flex flex-col items-center mb-10">
           <div className="w-40% h-40% flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
-            <img
+            <Image
               alt="dp"
               className="object-cover object-center h-[100%] w-full"
               src="/dp.png"
@@ -22,7 +23,7 @@ const Hero = () => {
             About Me
           </h1>
           <p className="mb-8 leading-relaxed">
-            Hi, I'm <strong>Sadia Siddique</strong>, a passionate Full Stack Developer creating innovative web solutions. Currently, a student at <strong>GIAIC, Governor House</strong>.
+            Hi I am <strong>Sadia Siddique</strong> a passionate Full Stack Developer creating innovative web solutions. Currently a student at <strong>GIAIC, Governor House</strong>.
           </p>
           <div className="flex justify-center">
             {/* "Get in Touch" Button with Link to Contact Page */}
@@ -49,3 +50,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
